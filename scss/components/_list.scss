@@ -2,9 +2,19 @@
   color: $brand-primary;
 }
 .list {
-  padding: 1.5rem;
+  padding: 1rem;
+
   .list-item {
+    padding-left: 0.5rem;
     cursor: pointer;
     height: 50px;
+
+    display: flex;
+    align-items: center;
+    background-color: $brand-light;
+
+    &:nth-child(odd) {
+      background-color: rgba($brand-primary, 0.3);
+    }
   }
 }

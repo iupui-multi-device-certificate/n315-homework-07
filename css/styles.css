@@ -132,9 +132,16 @@ footer {
 }
 
 .list {
-  padding: 1.5rem;
+  padding: 1rem;
 }
 .list .list-item {
+  padding-left: 0.5rem;
   cursor: pointer;
   height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: #f4f2ed;
+}
+.list .list-item:nth-child(odd) {
+  background-color: rgba(31, 81, 63, 0.3);
 }
