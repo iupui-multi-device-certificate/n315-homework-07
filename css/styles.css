@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* reset */
 *,
 *::before,
@@ -125,6 +126,23 @@ footer {
   align-items: center;
   justify-content: center;
   z-index: 1030;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header .close-detail {
+  background-color: transparent;
+  border: none;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1f513f;
+  cursor: pointer;
+}
+header .close-detail:after {
+  display: inline-block;
+  content: "×"; /* This will render the 'X' */
 }
 
 .list-title {

@@ -5,9 +5,17 @@ const renderListItems = (items) => `
   ${items.map((item) => renderListItem(item)).join("")}
 `;
 
-export const listView = (listItems, title = "My Lists") => `
+export const listView = (listItems, title = "My Lists", hasClose = false) => `
   <section>
-    <h1 class="list-title">${title}</h1>
+    <header>  
+      <h1 class="list-title">${title}</h1>
+      ${
+        hasClose
+          ? `<button class="close-detail"><span class="sr-only">Close</span></button>`
+          : ""
+      }
+      
+    </header>
     <ul class="list">
       ${renderListItems(listItems)}
     </ul>

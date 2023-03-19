@@ -1,3 +1,23 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  //keep it simple
+  //https://stackoverflow.com/questions/18611195/x-close-button-only-using-css
+  //andy crone solution + screen reader friendly bit
+  .close-detail {
+    background-color: transparent;
+    border: none;
+    font-size: 3rem;
+    font-weight: bold;
+    color: $brand-primary;
+    cursor: pointer;
+    &:after {
+      display: inline-block;
+      content: "\00d7"; /* This will render the 'X' */
+    }
+  }
+}
+
 .list-title {
   color: $brand-primary;
 }

@@ -2,8 +2,8 @@ import { LISTS } from "./data/lists.js";
 
 import { listView } from "./views/listView.js";
 
-function loadList(list, title) {
-  document.getElementById("app").innerHTML = listView(list, title);
+function loadList(list, title, hasClose) {
+  document.getElementById("app").innerHTML = listView(list, title, hasClose);
 }
 
 function loadLists(lists) {
@@ -17,7 +17,13 @@ function loadLists(lists) {
     const list = lists.find((list) => list.id === e.currentTarget.id);
 
     //make sure to send sublist not whole object
-    loadList(list.listItems, list.name);
+    loadList(list.listItems, list.name, true);
+
+    $("button").click(function (e) {
+      e.preventDefault();
+      console.log(e.currentTarget);
+      loadList(lists);
+    });
   });
 }
 
