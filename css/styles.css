@@ -127,6 +127,13 @@ footer {
   z-index: 1030;
 }
 
+.list-title {
+  color: #1f513f;
+}
+
+.list {
+  padding: 1.5rem;
+}
 .list .list-item {
   cursor: pointer;
   height: 50px;
