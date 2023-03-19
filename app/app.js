@@ -21,8 +21,9 @@ function loadLists(lists) {
 
     $("button").click(function (e) {
       e.preventDefault();
-      console.log(e.currentTarget);
-      loadList(lists);
+      // console.log(e.currentTarget);
+      //recursive - call the loadLists not loadList like at start of this
+      loadLists(lists);
     });
   });
 }
