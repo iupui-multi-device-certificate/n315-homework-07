@@ -1,0 +1,41 @@
+//colors from
+//https://www.rei.com/learn/expert-advice/family-camping-checklist.html
+$brand-primary: #1f513f;
+$brand-secondary: #999;
+$brand-dark: #000;
+$brand-light: #f4f2ed;
+
+$shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.25);
+$shadow-dark: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
+
+$gradient-primary: linear-gradient(
+  rgba($brand-primary, 0.3),
+  rgba($brand-dark, 0.5)
+);
+
+$gradient-dark: linear-gradient(rgba($brand-dark, 0.5), rgba($brand-dark, 0.5));
+
+$brand-primary-shadow: rgba($brand-primary, 0.1);
+
+$border-radius: 0.375rem;
+$border-radius-lg: 1.875rem;
+$spacing: 0.75rem;
+$spacing-lg: 1rem;
+$spacing-xl: 2rem;
+
+//Research to help decide what breakpoints to use
+// https://getbootstrap.com/docs/5.2/layout/breakpoints/
+//https://testsigma.com/blog/css-breakpoints/
+// https://polypane.app/blog/the-breakpoints-we-tested-in-2021-and-the-ones-to-test-in-2022/
+//https://get.foundation/sites/docs/media-queries.html
+
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
+/* 
+When the browser is smaller than 960px your menu must change from a full menu to a mobile or hamburger menu. When you click on that hamburger it will open to show all the links
+*/
+$breakpoint-mobile: 960px;
